@@ -13,5 +13,71 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="314dp"
+            android:layout_height="124dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/wellcome_to_your_shop"
+            android:textColor="#ffffff"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first_you_need_to_login_in_your_account"
+            android:textColor="#fafafa"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"/>
+
+        <EditText
+        android:background="@drawable/edite_text_background"
+        android:hint="@string/email"
+        android:autofillHints="#fafafa"
+        android:gravity="center"
+        android:id="@+id/txt_email_login"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="16dp"
+        android:padding="8dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+        <EditText
+            android:background="@drawable/edite_text_background"
+            android:hint="@string/email"
+            android:autofillHints="#fafafa"
+            android:gravity="center"
+            android:id="@+id/txt_password_login"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="16dp"
+            android:padding="8dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
